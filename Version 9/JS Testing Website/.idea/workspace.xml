@@ -7,53 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90185911-f053-4296-a934-8afc494087f1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/public/images/slider1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/public/images/slider1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/public/js/btnClick.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/public/js/btnClick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/routes/exercises.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/exercises.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/routes/games.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/games.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/ScenarioList.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/ScenarioList.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Scenarios/scenarioA0.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Scenarios/scenarioA1.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Scenarios/scenarioA2.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Scenarios/scenarioA3.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Scenarios/scenarioA4.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Scenarios/scenarioB0.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Scenarios/scenarioB1.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Scenarios/scenarioB2.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Scenarios/scenarioB3.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Scenarios/scenarioB4.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/editProfile.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/guestHome.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/index.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/profile.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slider1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slider1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/btnClick.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/btnClick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/cc.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/cc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/mutantgames.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/saves.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/ScenarioList.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioE0.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioE1.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioE2.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioE3.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioE4.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioF0.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioF1.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioF2.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioF3.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioF4.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioG0.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioG1.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioG2.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioG3.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MutantGames/scenarioG4.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/TestGames/scenarioT.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/TestGames/scenarioT.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/createScenario.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/createScenario.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/default-layout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/default-layout.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -188,39 +142,50 @@
     <session id="1544016143">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ejs" value="13" />
-          <entry key="js" value="18" />
+          <entry key="js" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="EJS" value="13" />
-          <entry key="JavaScript" value="18" />
+          <entry key="JavaScript" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ejs" value="599" />
-          <entry key="js" value="198" />
+          <entry key="js" value="199" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="EJS" value="599" />
-          <entry key="JavaScript" value="198" />
+          <entry key="JavaScript" value="199" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="69" column="32" lean-forward="true" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -293,7 +258,6 @@
         <option value="$PROJECT_DIR$/views/profile.ejs" />
         <option value="$PROJECT_DIR$/views/register.ejs" />
         <option value="$PROJECT_DIR$/views/MutantGames/ScenarioList.ejs" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/models/exercise.js" />
         <option value="$PROJECT_DIR$/views/TestGames/test.ejs" />
@@ -323,6 +287,7 @@
         <option value="$PROJECT_DIR$/admin/routes/exercises.js" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/views/default-layout.ejs" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
       </list>
     </option>
   </component>
@@ -367,6 +332,16 @@
               <item name="JS Testing Website" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JS Testing Website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS Testing Website" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS Testing Website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS Testing Website" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -376,7 +351,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Version 10/JS Testing Website" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -471,16 +446,17 @@
       <workItem from="1537872499080" duration="24917000" />
       <workItem from="1538145176775" duration="599000" />
       <workItem from="1538146385288" duration="5375000" />
+      <workItem from="1538152847016" duration="716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="472491000" />
+    <option name="totallyTimeSpent" value="473207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14014752" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14014752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -491,7 +467,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48946258" visible="true" weight="0.20454545" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.48946258" visible="true" weight="0.20454545" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5105374" side_tool="true" weight="0.19372295" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -651,34 +627,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/MutantGames/scenarioE0.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="118" selection-start-line="118" selection-end-line="120" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/MutantGames/ScenarioList.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/mutantgames.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1176">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/saves.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2023">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/views/MutantGames/scenarioE0.ejs" />
+    <entry file="file://$PROJECT_DIR$/views/MutantGames/ScenarioList.ejs" />
+    <entry file="file://$PROJECT_DIR$/routes/mutantgames.js" />
+    <entry file="file://$PROJECT_DIR$/routes/saves.js" />
     <entry file="file://$PROJECT_DIR$/views/TestGames/scenarioT.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -700,20 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -812,6 +750,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="69" column="32" lean-forward="true" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
         </state>
       </provider>
     </entry>

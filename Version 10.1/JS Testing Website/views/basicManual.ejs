@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basic Manual</title>
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<section id="appointment" data-stellar-background-ratio="3">
+    <div class="container">
+        <div class="row">
+            <h1>How To Play! (Beginners Manual)</h1>
+            <h3>Step 1</h3>
+            <div class="stepManual">
+                <img src="../public/HowTo/Images/1.png">
+                <p>Before starting make sure you are logged in. On the home page press the play button.</p>
+            </div>
+            <h3>Step 2</h3>
+            <div class="stepManual">
+                <img src="../public/HowTo/Images/2.png">
+                <p>The next page allows you to pick a game type. For a beginner, select the first option.
+                    The game type will simply involve writing a basic test case to kill a mutant that is
+                    specified in the game. You can keep track of your scores with the scores tab next to
+                    the game type.</p>
+            </div>
+            <h3>Step 3</h3>
+            <div class="stepManual">
+                <img src="../public/HowTo/Images/3.png">
+                <p>Some game types have more than one scenario so you are free to pick between them, but
+                    we will be selecting scenario 1 for this demonstration.</p>
+            </div>
+            <h3>Step 4</h3>
+            <div class="stepManual">
+                <img src="../public/HowTo/Images/4.png">
+                <p>The next screen is the game itself, a scenario in which you must kill the mutant by
+                    writing the appropriate test code.</p>
+            </div>
+            <h3>Step 5</h3>
+            <div class="stepManual">
+                <img src="../public/HowTo/Images/5.png">
+                <p>Here is the original code of the program which will be used to understand how the
+                    program works. According to the description, the program is a function which accepts
+                    a boolean value and returns the opposite value. For example: True would become false
+                    and false would become true.</p>
+            </div>
+            <h3>Step 6</h3>
+            <div class="stepManual">
+                <img src="../public/HowTo/Images/6.png">
+                <p>Here is a brief explanation of what the program does in case the program code is hard
+                    to understand.</p>
+            </div>
+            <h3>Step 7</h3>
+            <div class="stepManual">
+                <img src="../public/HowTo/Images/7.png">
+                <p>Here we have the mutant; a small change in the code which would not stop the code from
+                    running but will change what the program will do. In this scenario, the mutant removes
+                    the ! operator which translates to opposite for a boolean value. So without that
+                    operator, the function would return the boolean value with no change and so true would
+                    return true, false would return false. </p>
+            </div>
+            <h3>Step 8</h3>
+            <div class="stepManual">
+                <img src="../public/HowTo/Images/8.png">
+                <p>Now we must kill the mutant, this text editor allows you to enter the test case to do
+                    just that. A template is provided for the syntax of creating a test case to help.</p>
+            </div>
+            <h3>Step 9</h3>
+            <div class="stepManual">
+                <img src="../public/HowTo/Images/9.png">
+                <p>As the program is a function, we need to provide some input to send into the function.
+                    Therefore we first create a variable (named bool) and store the boolean value: true.
+                    Next we need to run the function, but not only that, we want to store the result in a
+                    variable too! This lets us check the result by using the variable. Our next variable
+                    (named result) stores the result of running the function along with our input (true).
+                    We know that giving the input true, should return the opposite; false. So we are able
+                    to use the expect function and input what the output should be (false). The mutant
+                    cannot possibly return the correct value due to the change in code, so the test case
+                    is sure to fail.
+                    Once our test case is ready, we may click the 'run test' button to check our test
+                    fails, and if so, we may press the save button to update our points.</p>
+            </div>
+            <h3>Step 10</h3>
+            <div class="stepManual">
+                <img src="../public/HowTo/Images/10.png">
+                <p>Upon clicking the 'run test' button, we will be given confirmation the code will begin
+                    running and a result will be produced shortly.</p>
+            </div>
+            <h3>Step 11</h3>
+            <div class="stepManual">
+                <img src="../public/HowTo/Images/11.png">
+                <p>At the bottom of the screen will be our result. As we can see, our test failed as we
+                    predicted against the program code (the spec). This is the result we look to achieve
+                    in this game mode.
+                    But wait? Could we not just enter a test case that will fail no matter what? For
+                    example, expect the result to be 'dfgfdgdfgdfg' which it would never be.
+                    The answer is no, when we are running the test case, it is not only compared to the
+                    mutant variant of the code, it is also ran against the original behind the scenes.
+                    Why? Because that is what mutation testing is; creating tests that would pass against
+                    the original program code but would fail if there was a mutant.</p>
+            </div>
+            <h3>Step 12</h3>
+            <div class="stepManual">
+                <img src="../public/HowTo/Images/12.png">
+                <p>Once we are satisfied, we press the save button. This will notify the user that their
+                    points are being updated accordingly. It will also refresh the page. To check your new
+                    score, complete the scenarios and return to the list of games page.</p>
+            </div>
+            <h3>Step 13</h3>
+            <div class="stepManual">
+                <img src="../public/HowTo/Images/13.png">
+                <p>There are five scenarios in each game, once completing the current scenario, press the
+                    next button to start the next scenario. The final scenario will provide a finish
+                    button for the user to return to the list of games page. </p>
+            </div>
+            <h3>Step 14</h3>
+            <div class="stepManual">
+                <p>Learn and have fun! This game is designed to show the importance of testing without a
+                    boring lecture or reading books.  </p>
+            </div>
+            <a href="/" class="section-btn btn btn-default smoothScroll">Exit</a>
+    </div>
+
+    </div>
+</section>
+
+</body>
+</html>

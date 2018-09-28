@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Test Exercise</title>
+
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50" onload="createIframe()">
+
+
+
+<%if (success_msg != '') { %>
+    <div class="alert alert-success">
+        <%= success_msg %>
+    </div>
+<% } %>
+<%if (error_msg != '') { %>
+    <div class="alert alert-danger">
+        <%= error_msg %>
+    </div>
+<% } %>
+
+<%if (success_msg) { %>
+
+    <% for(var i=0; i<success_msg.length;i++) {%>
+        <div class="alert alert-success">
+            <%= success_msg[i].msg %>
+        </div>
+
+    <% } %>
+
+<% } %>
+
+<%if (error) { %>
+
+    <% for(var i=0; i<error.length;i++) {%>
+        <div class="alert alert-danger">
+            <%= error[i].msg %>
+        </div>
+
+    <% } %>
+
+<% } %>
+
+
+
+<!-- HOWTO -->
+<section id="team" data-stellar-background-ratio="1">
+
+    <div class="container">
+        <div class="row">
+            <%if (type === 'TB' || type === 'TI' || type === 'TA') {%>
+            <h1>Kill the Mutant!</h1>
+            <div class="col-md-6 col-sm-6">
+                <div class="about-info">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.1s">Writing Test Cases</h2>
+                </div>
+            </div>
+                <h1 id="stype" hidden><%= type%></h1>
+                <h1 id="code" hidden><%= exercises.code%></h1>
+            <h1 id="mutation" hidden><%= exercises.mutation%></h1>
+                <h1 id="objectid" hidden><%= exercises._id%></h1>
+
+
+            <div class="clearfix"></div>
+
+            <div class="runTest">
+
+                <h3>Program Code</h3>
+                <p>The original code that is used to execute the program</p>
+
+                         <pre class="readonly-pre"><textarea class="readonly-textarea" id="p1" name="cut" cols="160" rows="7">
+    <%= exercises.code %>
+
+</textarea></pre>
+                <h3>Explanation</h3>
+                <p>A small description of how the program works</p>
+                <pre class="readonly-pre"><textarea class="readonly-textarea" id="p2" name="cut" cols="80" rows="3">
+    "<%= exercises.explaincode %>"
+
+</textarea></pre>
+                <h3>Mutation</h3>
+                <p>A description of the mutant added to the program code.</p>
+                <pre class="readonly-pre"><textarea class="readonly-textarea" id="p3" name="cut" cols="80" rows="3">
+    "<%= exercises.explainmut %>"
+
+</textarea></pre>
+
+
+
+                <h3>Enter Test</h3>
+                <p>Write a test case that should PASS on the original code but FAIL on the mutated code.</p>
+                <pre class="readonly-pre"><textarea class="readonly-textarea" id="codeInput" name="cut" cols="80" rows="30">
+    describe('Write Your Test Group Descriptions Here', () => {
+	    it('Write Your Test Expectation Here', () => {
+
+
+
+	      })
+    });
+                        </textarea></pre>
+                <p>Click 'Run Test' to run the test case against the mutated code.</p>
+                <p></p>
+                <button onclick="refreshIframe()">Run Test</button>
+                <%}%>
+
+
+
+                <% if (type === 'FB' || type === 'FI') {%>
+                    <h1>Find the Mutant!</h1>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="about-info">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.1s">Restore the Original Program Code</h2>
+                        </div>
+                    </div>
+                    <h1 id="stype" hidden><%= type%></h1>
+                    <h1 id="solution" hidden><%= exercises.solution%></h1>
+                    <h1 id="mutation" hidden><%= exercises.mutation%></h1>
+                    <h1 id="objectid" hidden><%= exercises._id%></h1>
+
+
+                    <div class="clearfix"></div>
+
+                <div class="runTest">
+
+                    <h3>Mutated Program Code</h3>
+                    <p>The mutated code that must be fixed to execute the program</p>
+
+                    <pre class="readonly-pre"><textarea class="readonly-textarea" id="p1" name="cut" cols="160" rows="7">
+    <%= exercises.mutation %>
+
+</textarea></pre>
+                    <h3>Explanation</h3>
+                    <p>A small description of how the program works</p>
+                    <pre class="readonly-pre"><textarea class="readonly-textarea" id="p2" name="cut" cols="80" rows="3">
+    "<%= exercises.explaincode %>"
+
+</textarea></pre>
+
+                    <h3>Enter Fixed code</h3>
+                    <p>Rewrite the program code as it should be. The test case should PASS on the fixed code but FAIL on the mutated code.</p>
+                    <pre class="readonly-pre"><textarea class="readonly-textarea" id="codeInput" name="cut" cols="80" rows="30">
+    function (){
+
+    };
+                        </textarea></pre>
+                    <p>Click 'Run Test' to run the test case against the fixed code.</p>
+                    <p></p>
+                    <button onclick="refreshIframem()">Run Test</button>
+                <%}%>
+                <p>Upon killing the mutant, click 'Save' to update your score.</p>
+                <p>Press 'Exit' to select another scenario.</p>
+                <form method="post" action="/testgames/scenario">
+                    <input type="hidden" class="form-control" placeholder="objectId" name="objectId" id="oid">
+                    <input type="hidden" class="form-control" placeholder="code" name="code" id="c">
+                    <input type="hidden" class="form-control" placeholder="mutation" name="mutation" id="m">
+                    <input type="hidden" class="form-control" placeholder="solution" name="solution" id="s">
+                    <input type="hidden" class="form-control" placeholder="type" name="type" id="t">
+                    <button type="submit" class="btn btn-default" id="save">Save</button>
+                </form>
+
+
+
+
+            </div>
+            <p></p>
+            <a href="/testgames/scenarioList/<%=type%>" class="section-btn btn btn-default smoothScroll">Exit</a>
+
+        </div>
+        <h3 >Tip: Test on LEFT should FAIL. Test on RIGHT should PASS.</h3>
+    </div>
+
+
+</section>
+
+
+
+
+
+
+<!-- SCRIPTS -->
+<script src="../../../public/js/jquery.js"></script>
+<script src="../../../public/js/bootstrap.min.js"></script>
+<script src="../../../public/js/jquery.sticky.js"></script>
+<script src="../../../public/js/jquery.stellar.min.js"></script>
+<script src="../../../public/js/wow.min.js"></script>
+<script src="../../../public/js/smoothscroll.js"></script>
+<script src="../../../public/js/owl.carousel.min.js"></script>
+<script src="../../../public/js/custom.js"></script>
+<script src="../../../public/js/btnClick.js"></script>
+<script src="../../../public/js/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("codeInput");
+    editor.setTheme("ace/theme/tomorrow_night_bright");
+    editor.setOption("maxLines", 100);
+    editor.session.setMode("ace/mode/javascript");
+    var editor1 = ace.edit("p1");
+    editor1.setTheme("ace/theme/tomorrow_night_bright");
+    editor1.setOption("maxLines", 100);
+    editor1.session.setMode("ace/mode/javascript");
+    var editor1 = ace.edit("p2");
+    editor1.setTheme("ace/theme/tomorrow_night_bright");
+    editor1.setOption("maxLines", 100);
+    editor1.session.setMode("ace/mode/javascript");
+    var editor1 = ace.edit("p3");
+    editor1.setTheme("ace/theme/tomorrow_night_bright");
+    editor1.setOption("maxLines", 100);
+    editor1.session.setMode("ace/mode/javascript");
+</script>
+
+</body>
+</html>

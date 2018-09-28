@@ -1,0 +1,14 @@
+1. Make sure you are logged in. Select the play button on the homepage.
+2. Select the 'Find The Mutant' game mode.
+3. Select the scenario, we will pick 1.
+4. Here is the same layout as the previous game mode but slightly altered. We now have
+   our mutation code to begin with, followed by an explanation and lastly, the text 
+   editor to fix the code. The difference with this game mode is for you to find the 
+   mutant in the code given, and rewrite the code as it should have been originally.
+5. The code returns the filename extension and so searches for the '.' to grab the 
+   extension. In the code we see that it instead looks for 'h'. Modifying this line
+   should result in passing the test case.
+6. Upon running the code, we find the test case passes. The code has been restored.
+   But wait? What is making sure the code written is correct? Well there is a test case
+   that will only work if the code does as it should and so will be tested against the 
+   text editor code when ran. 

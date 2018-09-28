@@ -70,10 +70,7 @@ router.get('/users/profile', ensureAuthenticated, function(req, res){
 //Get Mutation Testing info page
 router.get('/mutationTesting', function(req, res){
     res.render('mutationTesting', {user: req.user });
-    fs.unlink('output.txt', (err) => {
-        if (err) throw err;
-        console.log('path/file.txt was deleted');
-    });
+
 });
 
 router.get('/basicManual', function(req, res){

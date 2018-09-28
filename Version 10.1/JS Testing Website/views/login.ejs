@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+<!-- PLAY -->
+<section id="appointment" data-stellar-background-ratio="3">
+    <div class="container">
+        <div class="row">
+
+            <%if (error != '') { %>
+            <div class="alert alert-danger">
+                <%= error %>
+            </div>
+            <% } %>
+
+            <%if (success_msg != '') { %>
+            <div class="alert alert-success">
+                <%= success_msg %>
+            </div>
+            <% } %>
+
+            <div class="col-md-6 col-sm-6">
+                <div class="about-info">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.1s">Account Login</h2>
+                    <form method="post" action="/users/login">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" class="form-control" name="username" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" name="password" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <p></p>
+                    <a href="/users/register">Don't have an account? Sign up here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
