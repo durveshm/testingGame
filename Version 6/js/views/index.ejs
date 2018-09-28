@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Homepage</title>
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Tooplate">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/css/animate.css">
+    <link rel="stylesheet" href="/public/css/owl.carousel.css">
+    <link rel="stylesheet" href="/public/css/owl.theme.default.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/public/css/tooplate-style.css">
+
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+<!-- PRE LOADER -->
+<section class="preloader">
+    <div class="spinner">
+
+        <span class="spinner-rotate"></span>
+
+    </div>
+</section>
+
+
+<!-- HEADER -->
+<header>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 col-sm-5">
+                <p>Web-Based Game for Teaching Testing</p>
+            </div>
+
+
+
+        </div>
+    </div>
+</header>
+
+
+<!-- MENU -->
+<section class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+
+            <!-- lOGO TEXT HERE -->
+            <a href="/" class="navbar-brand"></i>Testing Game</a>
+        </div>
+
+        <!-- MENU LINKS -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/" class="smoothScroll">Home</a></li>
+                <li><a href="#about" class="smoothScroll">What is this?</a></li>
+                <li><a href="#team" class="smoothScroll">How to play</a></li>
+                <li class="playBtn" class="smoothScroll"><a href="/users/profile">Profile</a></li>
+                <li class="playBtn" class="smoothScroll"><a href="/games/scenarioList">Play</a></li>
+                <li class="playBtn" class="smoothScroll"><a href="/cc/createScenario">Create</a></li>
+                <li role="presentation" class="smoothScroll"><a href="/users/logout">Logout</a></li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- HOME -->
+<section id="home" class="slider" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row">
+            <%if (error != '') { %>
+            <div class="alert alert-danger">
+                <%= error %>
+            </div>
+            <% } %>
+
+            <%if (success_msg != '') { %>
+            <div class="alert alert-success">
+                <%= success_msg %>
+            </div>
+            <% } %>
+
+            <div class="owl-carousel owl-theme">
+                <div class="item item-first">
+                    <div class="caption">
+                        <div class="col-md-offset-1 col-md-10">
+                            <h3>Learning testing has never been easier...</h3>
+                            <h1>Mutation Testing</h1>
+                            <a href="#team" class="section-btn btn btn-default smoothScroll">Check out the basics</a>
+                            <a href="/games/scenarioList" class="section-btn btn btn-default smoothScroll">Play Now!</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6">
+                <div class="about-info">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.6s">What is this?</h2>
+                    <div class="wow fadeInUp" data-wow-delay="0.8s">
+                        <p>Testing is hard to learn; many students struggle in defining their own test cases and miss important cases.</p>
+                        <p>This system provides users with a collection of scenarios that require writing certain test cases. They would then be challenged to find a test case that meets certain conditions. The conditions range from identifying an incorrect program apart from a fully functioning program, to reaching a particular place in the code. </p>
+                        <a href="/users/mutationTesting" class="section-btn btn btn-default smoothScroll">Learn more about Mutation Testing here...</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- HOWTO -->
+<section id="team" data-stellar-background-ratio="1">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6">
+                <div class="about-info">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.1s">How to play</h2>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                    <img src="images/team-image1.jpg" class="img-responsive" alt="">
+
+                    <div class="team-info">
+                        <h3>HowTo Instruction Manual</h3>
+                        <p>Read through the basics of how to play.</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                    <img src="images/team-image2.jpg" class="img-responsive" alt="">
+
+                    <div class="team-info">
+                        <h3>Youtube Tutorial</h3>
+                        <p>Watch as we demonstrate how to play in our fantastic tutorial for beginners!</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                    <img src="images/team-image3.jpg" class="img-responsive" alt="">
+
+                    <div class="team-info">
+                        <h3>Advanced Manual</h3>
+                        <p>Want to learn more? Check out the in-depth manual!</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- SCRIPTS -->
+<script src="/public/js/jquery.js"></script>
+<script src="/public/js/bootstrap.min.js"></script>
+<script src="/public/js/jquery.sticky.js"></script>
+<script src="/public/js/jquery.stellar.min.js"></script>
+<script src="/public/js/wow.min.js"></script>
+<script src="/public/js/smoothscroll.js"></script>
+<script src="/public/js/owl.carousel.min.js"></script>
+<script src="/public/js/custom.js"></script>
+<script src="/public/js/btnClick.js"></script>
+
+</body>
+</html>

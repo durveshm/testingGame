@@ -1,0 +1,9 @@
+describe('Write Your Test Group Descriptions Here', () => {
+	it('Write Your Test Expectation Here', () => {
+		let bool = false;
+		
+		const result = getOpposite(bool);
+
+		expect(result).toBe(true);
+	})
+});

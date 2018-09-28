@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Game List</title>
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50" onload="checkScore()">
+
+<!-- HOWTO -->
+<section id="team" data-stellar-background-ratio="1">
+    <div class="container">
+        <h1>Pick a Game Type!</h1>
+        <div class="sameLine">
+
+            <a href="/testgames/scenarioList" class="section-btn btn btn-default smoothScroll">Write Test Cases (Beginner)</a>
+            <h3 id="s0"><%=user.scenarioA %></h3>
+            <p id="s1" hidden ><%=user.scenarioB %></p>
+            <p></p>
+            </div>
+        <div class="sameLine">
+
+            <a href="/testgames/scenarioC0" class="section-btn btn btn-default smoothScroll">Write Test Cases (Intermediate)</a>
+            <h3 id="s2"><%=user.scenarioC %></h3>
+            <p></p>
+        </div>
+        <div class="sameLine">
+
+            <a href="/testgames/scenarioD0" class="section-btn btn btn-default smoothScroll">Write Test Cases (Advanced - Beta)</a>
+            <h3 id="s3"><%=user.scenarioD %></h3>
+            <p></p>
+        </div>
+        <div class="sameLine">
+
+            <a href="/mutantgames/scenarioList" class="section-btn btn btn-default smoothScroll">Find the Mutant (Beginner)</a>
+            <h3 id="s4"><%=user.scenarioE %></h3>
+            <p id="s5" hidden ><%=user.scenarioF %></p>
+            <p></p>
+        </div>
+        <div class="sameLine">
+
+            <a href="/mutantgames/scenarioG0" class="section-btn btn btn-default smoothScroll">Find the Mutant (Intermediate)</a>
+            <h3 id="s6"><%=user.scenarioG %></h3>
+            <p></p>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SCRIPTS -->
+<script src="../public/js/btnClick.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Exercises</title>
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Tooplate">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../public/css/animate.css">
+    <link rel="stylesheet" href="../public/css/owl.carousel.css">
+    <link rel="stylesheet" href="../public/css/owl.theme.default.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../public/css/tooplate-style.css">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50" onload="createIframe()">
+
+<!-- PRE LOADER -->
+<section class="preloader">
+    <div class="spinner">
+
+        <span class="spinner-rotate"></span>
+
+    </div>
+</section>
+
+
+<!-- HEADER -->
+<header>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 col-sm-5">
+                <p>Web-Based Game for Teaching Testing</p>
+            </div>
+
+
+
+        </div>
+    </div>
+</header>
+
+
+<!-- MENU -->
+<section class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+
+            <!-- lOGO TEXT HERE -->
+            <a href="index.html" class="navbar-brand"></i>Testing Game</a>
+        </div>
+
+        <!-- MENU LINKS -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/" class="smoothScroll">Home</a></li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+<!-- HOWTO -->
+<section id="team" data-stellar-background-ratio="1">
+    <div class="container">
+        <div class="row">
+            <h1>Create Your Own Scenario!</h1>
+            <div class="col-md-6 col-sm-6">
+                <div class="about-info">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.1s">Learn While Teaching!</h2>
+                </div>
+            </div>
+            <%if (success_msg != '') { %>
+            <div class="alert alert-success">
+                <%= success_msg %>
+            </div>
+            <% } %>
+            <%if (error_msg != '') { %>
+            <div class="alert alert-danger">
+                <%= error_msg %>
+            </div>
+            <% } %>
+
+            <%if (success_msg) { %>
+
+            <% for(var i=0; i<success_msg.length;i++) {%>
+            <div class="alert alert-success">
+                <%= success_msg[i].msg %>
+            </div>
+
+            <% } %>
+
+            <% } %>
+
+            <%if (error) { %>
+
+            <% for(var i=0; i<error.length;i++) {%>
+            <div class="alert alert-danger">
+                <%= error[i].msg %>
+            </div>
+
+            <% } %>
+
+            <% } %>
+            <div class="clearfix"></div>
+            <form method="post" action="/cc/createScenario">
+            <div class="runTest">
+                <h3>Enter Your Program</h3>
+                         <textarea class="form-control" id="p1o" name="code" cols="160" rows="7">
+    function myfunction() {
+
+
+
+    }</textarea>
+                <h3>Enter Your Mutated Program</h3>
+                <textarea class="form-control" id="p1m" name="mutation" cols="160" rows="7">
+    function myfunction() {
+
+
+
+    }</textarea>
+                <h3>Enter the explanation for your code</h3>
+                <pre class="readonly-pre"><textarea class="form-control" id="p2" name="explaincode" cols="80" rows="3"></textarea></pre>
+                <h3>Enter the explanation of the mutation</h3>
+                <pre class="readonly-pre"><textarea class="form-control" id="p3" name="explainmut" cols="80" rows="3"></textarea></pre>
+
+
+
+                <h2>Enter the solution test of your code</h2>
+
+                <textarea class=class="form-control" id="codeInput" name="solution" cols="80" rows="30">
+    describe('Write Your Test Group Descriptions Here', () => {
+	    it('Write Your Test Expectation Here', () => {
+
+
+
+	      })
+    });
+                    </textarea>
+
+
+
+
+
+                <button type="submit" class="btn btn-default" id="upload">Upload</button>
+
+
+
+            </div>
+            </form>
+            <button onclick="updateIframe()">Run Test (Check your code first!)</button>
+            <button onclick="verifyIframe()">Verify Scenario</button>
+            <p></p>
+            <a href="/" class="section-btn btn btn-default smoothScroll">Exit</a>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- SCRIPTS -->
+<script src="../public/js/jquery.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../public/js/jquery.sticky.js"></script>
+<script src="../public/js/jquery.stellar.min.js"></script>
+<script src="../public/js/wow.min.js"></script>
+<script src="../public/js/smoothscroll.js"></script>
+<script src="../public/js/owl.carousel.min.js"></script>
+<script src="../public/js/custom.js"></script>
+<script src="../public/js/btnClick.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+https://www.w3resource.com/javascript-exercises/
+WHAT NEEDS TO BE DONE
+- CHECK ALL BUTTON REDIRECTS
+ADMIN CONTROLS 
