@@ -11,3 +11,11 @@ USER MANUAL
 7.	Type ‘localhost:3000’ into the web browser and run it.
 8.	The game will now be up and running.
 Tip: MongoDB has issues with installing, try to install without mongo atlas. After installation, remove mongo from the cmd, then re configure using the appropriate directory paths and configuration.
+
+Contributors
+Mohammed Durvesh <hamzah.durvesh@hotmail.co.uk>
+
+License & Copyright
+© Mohammed Durvesh 2018
+
+License under the [MIT License](LICENSE).
