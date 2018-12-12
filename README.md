@@ -18,4 +18,4 @@ Mohammed Durvesh <hamzah.durvesh@hotmail.co.uk>
 License & Copyright
 © Mohammed Durvesh 2018
 
-License under the [MIT License](LICENSE).
+Licensed under the [MIT License](LICENSE).
