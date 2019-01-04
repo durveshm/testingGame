@@ -137,27 +137,33 @@ router.post('/editProfile', function (req, res) {
     req.checkBody('email', 'Email is not valid').isEmail();
     req.checkBody('username', 'Username is required').notEmpty();
 
-
-    var errors = req.validationErrors();
-    console.log(errors);
-    if (errors) {
-        res.render('editProfile', {error : errors})
-    } else {
-        var user = req.user;
-        var id = user._id;
+    User.getUserByUsername(username, function (err, user) {
+        if (err) throw err;
+        if (user) {
+            req.flash('error_msg', 'Username is taken.');
+            res.redirect('register');
         }
+        else {
+            var errors = req.validationErrors();
+            console.log(errors);
+            if (errors) {
+                res.render('editProfile', {error: errors})
+            } else {
+                var user = req.user;
+                var id = user._id;
+            }
 
-        User.editProfile(user, id, username, name, email, function(err, user){
-            if(err) throw err;
-            console.log(user);
+            User.editProfile(user, id, username, name, email, function (err, user) {
+                if (err) throw err;
+                console.log(user);
+            });
+
+            req.flash('success_msg', 'You have updated your profile!');
+
+            res.redirect('/users/profile');
+
+        }
         });
-
-        req.flash('success_msg', 'You have updated your profile!');
-
-        res.redirect('/users/profile');
-
-
-
 });
 
 module.exports = router;
